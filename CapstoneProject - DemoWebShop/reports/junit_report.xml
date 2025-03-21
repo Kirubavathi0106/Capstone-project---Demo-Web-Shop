@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="54.577" tests="14" skipped="0" failures="1" errors="0">
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Successful Registration - #1.1" time="12.304">
-<failure type="java.lang.AssertionError" message="Registration success message was not displayed! expected [true] but found [false]">
-<![CDATA[java.lang.AssertionError: Registration success message was not displayed! expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.demowebshop.stepdefinition.RegistrationLoginSteps.user_should_see_a_message_your_registration_completed(RegistrationLoginSteps.java:83)
-	at ✽.user should see a success message(file:///D:/JAVA%20PRACTISE%20PROGRAMS/WIPRO%20-%20SELENIUM/CapstoneProject%20-%20DemoWebShop/src/test/resources/features/DwsHomeSearchProduct.feature:16)
-]]>
-</failure>
+<testsuite name="Cucumber" time="47.966" tests="14" skipped="0" failures="0" errors="0">
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Successful Registration - #1.1" time="3.142">
 <system-out><![CDATA[
 Given the user is on the homepage...........................................passed
 When user navigates to Registration page....................................passed
 And user selects gender "Female"............................................passed
 And user enters first name "Kiruba".........................................passed
 And user enters last name "Vathi"...........................................passed
-And user enters email "Kirubavathi461@gmail.com"............................passed
+And user enters email "Kirubavathi77345@gmail.com"..........................passed
 And user enters password "Kiruba@22"........................................passed
 And user enters confirm password "Kiruba@22"................................passed
 And user clicks on the register button......................................passed
-Then user should see a success message......................................failed
-And user clicks on the logout button........................................skipped
+Then user should see a success message......................................passed
+And user clicks on the logout button........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Login with valid credentials - #1.1" time="1.95">
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Login with valid credentials - #1.1" time="1.985">
 <system-out><![CDATA[
 Given the user is on the homepage...........................................passed
 When the user clicks on login link..........................................passed
@@ -33,14 +24,14 @@ And the user clicks on login button.........................................pass
 Then the welcome message and logout should be displayed on home page........passed
 ]]></system-out>
 </testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Verify the display of major sections on the home page" time="0.115">
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Verify the display of major sections on the home page" time="0.146">
 <system-out><![CDATA[
 Given the user is on the homepage...........................................passed
 When user verifies the Featured Products....................................passed
 And user verifies the search bar............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Search for a product using the search bar" time="1.289">
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Search for a product using the search bar" time="1.196">
 <system-out><![CDATA[
 Given the user is on the homepage...........................................passed
 When the user enters "Smartphone" in the search box.........................passed
@@ -48,7 +39,7 @@ And clicks the search button................................................pass
 Then the search results for "Smartphone" should be displayed................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Search and apply filters for different products - #1.1" time="5.145">
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Search and apply filters for different products - #1.1" time="4.797">
 <system-out><![CDATA[
 Given the user is on the homepage...........................................passed
 When the user enters "Health Book" in the search box........................passed
@@ -62,7 +53,7 @@ And user clicks on Add to Cart button.......................................pass
 And user verifies that the product is successfully added to the cart........passed
 ]]></system-out>
 </testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Search and apply filters for different products - #1.2" time="4.685">
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Search and apply filters for different products - #1.2" time="4.68">
 <system-out><![CDATA[
 Given the user is on the homepage...........................................passed
 When the user enters "Smartphone" in the search box.........................passed
@@ -76,7 +67,7 @@ And user clicks on Add to Cart button.......................................pass
 And user verifies that the product is successfully added to the cart........passed
 ]]></system-out>
 </testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Validate product details on the product details page" time="1.173">
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Validate product details on the product details page" time="1.122">
 <system-out><![CDATA[
 Given the user on product details page......................................passed
 When the product title is displayed.........................................passed
@@ -89,7 +80,7 @@ And user goes to wishlist page..............................................pass
 Then the user verifies that the product is present in the wishlist..........passed
 ]]></system-out>
 </testcase>
-<testcase classname="Testing the entire flow from adding items to the cart to completing a purchase." name="Manage Shopping Cart (Update &amp; Remove)" time="4.266">
+<testcase classname="Testing the entire flow from adding items to the cart to completing a purchase." name="Manage Shopping Cart (Update &amp; Remove)" time="4.216">
 <system-out><![CDATA[
 Given the user goes to the shopping cart page...............................passed
 When the user updates the quantity of "Smartphone" to "3"...................passed
@@ -100,7 +91,7 @@ And user enables the termscheckbox..........................................pass
 And the user selects the checkout button....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Testing the entire flow from adding items to the cart to completing a purchase." name="Completing an order with valid billing, shipping, and payment details" time="8.421">
+<testcase classname="Testing the entire flow from adding items to the cart to completing a purchase." name="Completing an order with valid billing, shipping, and payment details" time="9.029">
 <system-out><![CDATA[
 Given User is on the Checkout page..........................................passed
 When User enters billing details............................................passed
@@ -111,7 +102,7 @@ Then User should see the order confirmation message.........................pass
 And User should click continue button.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login and Registration Functionality" name="Invalid Registration - #1.1" time="1.369">
+<testcase classname="Login and Registration Functionality" name="Invalid Registration - #1.1" time="1.449">
 <system-out><![CDATA[
 Given user on homepage of Website...........................................passed
 When user navigates to Registration page....................................passed
@@ -125,7 +116,7 @@ And user clicks on the register button......................................pass
 Then user should see an error message "Wrong email format"..................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login and Registration Functionality" name="Login with invalid credentials - #1.1" time="1.471">
+<testcase classname="Login and Registration Functionality" name="Login with invalid credentials - #1.1" time="1.449">
 <system-out><![CDATA[
 Given user on homepage of Website...........................................passed
 When the user clicks on login link..........................................passed
@@ -134,7 +125,7 @@ And the user clicks on login button.........................................pass
 Then an error message should be displayed saying "Login was unsuccessful. Please correct the errors and try again".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login and Registration Functionality" name="Login with invalid email - #1.1" time="1.515">
+<testcase classname="Login and Registration Functionality" name="Login with invalid email - #1.1" time="1.48">
 <system-out><![CDATA[
 Given user on homepage of Website...........................................passed
 When the user clicks on login link..........................................passed
@@ -143,7 +134,7 @@ And the user clicks on login button.........................................pass
 Then an error message should be displayed saying "Login was unsuccessful. Please correct the errors and try again".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login and Registration Functionality" name="Recovering the Password - #1.1" time="2.088">
+<testcase classname="Login and Registration Functionality" name="Recovering the Password - #1.1" time="1.961">
 <system-out><![CDATA[
 Given user on homepage of Website...........................................passed
 When the user clicks on login link..........................................passed
@@ -153,7 +144,7 @@ And the user clicks on Recover button.......................................pass
 Then the user should see a recovery message "Email with instructions has been sent to you.".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login and Registration Functionality" name="Search with no matching results" time="2.01">
+<testcase classname="Login and Registration Functionality" name="Search with no matching results" time="1.904">
 <system-out><![CDATA[
 Given user on homepage of Website...........................................passed
 When the user enters "XYZPhone" in the search bar...........................passed
