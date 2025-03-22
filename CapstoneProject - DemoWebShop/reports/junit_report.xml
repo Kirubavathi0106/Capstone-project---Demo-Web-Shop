@@ -1,127 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="61.027" tests="15" skipped="0" failures="0" errors="0">
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Successful Registration - #1.1" time="3.871">
-<system-out><![CDATA[
-Given the user is on the homepage...........................................passed
-When user navigates to Registration page....................................passed
-And user selects gender "Female"............................................passed
-And user enters first name "Kiruba".........................................passed
-And user enters last name "Vathi"...........................................passed
-And user enters email "Kirubavathi46534@gmail.com"..........................passed
-And user enters password "Kiruba@22"........................................passed
-And user enters confirm password "Kiruba@22"................................passed
-And user clicks on the register button......................................passed
-Then user should see a success message......................................passed
-And user clicks on the logout button........................................passed
-Then User will be redirected to Home page...................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Successful Registration - #1.2" time="6.144">
-<system-out><![CDATA[
-Given the user is on the homepage...........................................passed
-When user navigates to Registration page....................................passed
-And user selects gender "Male"..............................................passed
-And user enters first name "Sanjiv".........................................passed
-And user enters last name "Sai".............................................passed
-And user enters email "sanjivsaravanan16@gmail.com".........................passed
-And user enters password "Sanjiv@1234"......................................passed
-And user enters confirm password "Sanjiv@1234"..............................passed
-And user clicks on the register button......................................passed
-Then user should see a success message......................................passed
-And user clicks on the logout button........................................passed
-Then User will be redirected to Home page...................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Login with valid credentials - #1.1" time="2.36">
-<system-out><![CDATA[
-Given the user is on the homepage...........................................passed
-When the user clicks on login link..........................................passed
-And the user enters email "kirubavathi14@gmail.com" and password "Kiruba@22".passed
-And the user clicks on login button.........................................passed
-Then the welcome message and logout should be displayed on home page........passed
-]]></system-out>
-</testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Verify the display of major sections on the home page" time="0.128">
-<system-out><![CDATA[
-Given the user is on the homepage...........................................passed
-When user verifies the Featured Products....................................passed
-And user verifies the search bar............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Search for a product using the search bar" time="1.44">
-<system-out><![CDATA[
-Given the user is on the homepage...........................................passed
-When the user enters "Smartphone" in the search box.........................passed
-And clicks the search button................................................passed
-Then the search results for "Smartphone" should be displayed................passed
-]]></system-out>
-</testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Search and apply filters for different products - #1.1" time="6.304">
-<system-out><![CDATA[
-Given the user is on the homepage...........................................passed
-When the user enters "Health Book" in the search box........................passed
-And clicks the search button................................................passed
-And the user enables advanced search........................................passed
-And the user selects category "Books".......................................passed
-And the user sets the price range from 5 to 10..............................passed
-And the user clicks on the search button....................................passed
-Then the search results for "Health Book" should be displayed within the filters and clicked.passed
-And user clicks on Add to Cart button.......................................passed
-Then user verifies that the product is successfully added to the cart.......passed
-]]></system-out>
-</testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Search and apply filters for different products - #1.2" time="5.378">
-<system-out><![CDATA[
-Given the user is on the homepage...........................................passed
-When the user enters "Smartphone" in the search box.........................passed
-And clicks the search button................................................passed
-And the user enables advanced search........................................passed
-And the user selects category "Electronics >> Cell phones"..................passed
-And the user sets the price range from 100 to 500...........................passed
-And the user clicks on the search button....................................passed
-Then the search results for "Smartphone" should be displayed within the filters and clicked.passed
-And user clicks on Add to Cart button.......................................passed
-Then user verifies that the product is successfully added to the cart.......passed
-]]></system-out>
-</testcase>
-<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Validate product details on the product details page" time="1.561">
-<system-out><![CDATA[
-Given the user on product details page......................................passed
-When the product title is displayed.........................................passed
-And the product description should be displayed.............................passed
-And the product price should be displayed...................................passed
-And the product image should be displayed...................................passed
-And the product availability should be displayed............................passed
-And user click on Add to Wishlist button....................................passed
-And user goes to wishlist page..............................................passed
-Then the user verifies that the product is present in the wishlist..........passed
-]]></system-out>
-</testcase>
-<testcase classname="Testing the entire flow from adding items to the cart to completing a purchase." name="Manage Shopping Cart (Update &amp; Remove)" time="5.783">
-<system-out><![CDATA[
-Given the user goes to the shopping cart page...............................passed
-When the user updates the quantity of "Smartphone" to "3"...................passed
-And the user removes the "Health Book" from the cart........................passed
-And the user clicks the "Update shopping cart" button.......................passed
-Then the cart should reflect the updated items and quantities...............passed
-And user enables the termscheckbox..........................................passed
-And the user selects the checkout button....................................passed
-Then the user should be redirected to checkout page.........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Testing the entire flow from adding items to the cart to completing a purchase." name="Completing an order with valid billing, shipping, and payment details" time="10.927">
-<system-out><![CDATA[
-Given User is on the Checkout page..........................................passed
-When User enters billing details............................................passed
-And User selects the shipping method........................................passed
-And User chooses the payment method and enters details......................passed
-And User confirms the order.................................................passed
-Then User should see the order confirmation message.........................passed
-And User should click continue button.......................................passed
-Then User will be redirected to Home page...................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login and Registration Functionality" name="Invalid Registration - #1.1" time="1.81">
+<testsuite name="Cucumber" time="54.367" tests="15" skipped="0" failures="0" errors="0">
+<testcase classname="Login and Registration Functionality" name="Invalid Registration - #1.1" time="1.263">
 <system-out><![CDATA[
 Given user on homepage of Website...........................................passed
 When user navigates to Registration page....................................passed
@@ -135,7 +14,7 @@ And user clicks on the register button......................................pass
 Then user should see an error message "Wrong email format"..................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login and Registration Functionality" name="Login with invalid credentials - #1.1" time="1.671">
+<testcase classname="Login and Registration Functionality" name="Login with invalid credentials - #1.1" time="1.312">
 <system-out><![CDATA[
 Given user on homepage of Website...........................................passed
 When the user clicks on login link..........................................passed
@@ -144,7 +23,7 @@ And the user clicks on login button.........................................pass
 Then an error message should be displayed saying "Login was unsuccessful. Please correct the errors and try again".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login and Registration Functionality" name="Login with invalid email - #1.1" time="1.751">
+<testcase classname="Login and Registration Functionality" name="Login with invalid email - #1.1" time="1.348">
 <system-out><![CDATA[
 Given user on homepage of Website...........................................passed
 When the user clicks on login link..........................................passed
@@ -153,7 +32,7 @@ And the user clicks on login button.........................................pass
 Then an error message should be displayed saying "Login was unsuccessful. Please correct the errors and try again".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login and Registration Functionality" name="Recovering the Password - #1.1" time="2.453">
+<testcase classname="Login and Registration Functionality" name="Recovering the Password - #1.1" time="2.237">
 <system-out><![CDATA[
 Given user on homepage of Website...........................................passed
 When the user clicks on login link..........................................passed
@@ -163,12 +42,131 @@ And the user clicks on Recover button.......................................pass
 Then the user should see a recovery message "Email with instructions has been sent to you.".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login and Registration Functionality" name="Search with no matching results" time="2.584">
+<testcase classname="Login and Registration Functionality" name="Search with no matching results" time="2.672">
 <system-out><![CDATA[
 Given user on homepage of Website...........................................passed
 When the user enters "XYZPhone" in the search bar...........................passed
 And clicks the search button................................................passed
 Then a message "No products found" should be displayed......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Successful Registration - #1.1" time="4.055">
+<system-out><![CDATA[
+Given the user is on the homepage...........................................passed
+When user navigates to Registration page....................................passed
+And user selects gender "Female"............................................passed
+And user enters first name "Kiruba".........................................passed
+And user enters last name "Vathi"...........................................passed
+And user enters email "Kirubavathi42810@gmail.com"..........................passed
+And user enters password "Kiruba@22"........................................passed
+And user enters confirm password "Kiruba@22"................................passed
+And user clicks on the register button......................................passed
+Then user should see a success message......................................passed
+And user clicks on the logout button........................................passed
+Then User will be redirected to Home page...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Successful Registration - #1.2" time="4.415">
+<system-out><![CDATA[
+Given the user is on the homepage...........................................passed
+When user navigates to Registration page....................................passed
+And user selects gender "Male"..............................................passed
+And user enters first name "Sanjiv".........................................passed
+And user enters last name "Saravanan".......................................passed
+And user enters email "sanjivsaravanan33@gmail.com".........................passed
+And user enters password "Sanjiv@1234"......................................passed
+And user enters confirm password "Sanjiv@1234"..............................passed
+And user clicks on the register button......................................passed
+Then user should see a success message......................................passed
+And user clicks on the logout button........................................passed
+Then User will be redirected to Home page...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Login with valid credentials - #1.1" time="2.187">
+<system-out><![CDATA[
+Given the user is on the homepage...........................................passed
+When the user clicks on login link..........................................passed
+And the user enters email "kirubavathi14@gmail.com" and password "Kiruba@22".passed
+And the user clicks on login button.........................................passed
+Then the welcome message and logout should be displayed on home page........passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Verify the display of major sections on the home page" time="0.101">
+<system-out><![CDATA[
+Given the user is on the homepage...........................................passed
+When user verifies the Featured Products....................................passed
+And user verifies the search bar............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Search for a product using the search bar" time="1.468">
+<system-out><![CDATA[
+Given the user is on the homepage...........................................passed
+When the user enters "Smartphone" in the search box.........................passed
+And clicks the search button................................................passed
+Then the search results for "Smartphone" should be displayed................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Search and apply filters for different products - #1.1" time="5.682">
+<system-out><![CDATA[
+Given the user is on the homepage...........................................passed
+When the user enters "Health Book" in the search box........................passed
+And clicks the search button................................................passed
+And the user enables advanced search........................................passed
+And the user selects category "Books".......................................passed
+And the user sets the price range from 5 to 10..............................passed
+And the user clicks on the search button....................................passed
+Then the search results for "Health Book" should be displayed within the filters and clicked.passed
+And user clicks on Add to Cart button.......................................passed
+Then user verifies that the product is successfully added to the cart.......passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Search and apply filters for different products - #1.2" time="5.926">
+<system-out><![CDATA[
+Given the user is on the homepage...........................................passed
+When the user enters "Smartphone" in the search box.........................passed
+And clicks the search button................................................passed
+And the user enables advanced search........................................passed
+And the user selects category "Electronics >> Cell phones"..................passed
+And the user sets the price range from 100 to 500...........................passed
+And the user clicks on the search button....................................passed
+Then the search results for "Smartphone" should be displayed within the filters and clicked.passed
+And user clicks on Add to Cart button.......................................passed
+Then user verifies that the product is successfully added to the cart.......passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Verification,Search Functionality and product details verification" name="Validate product details on the product details page" time="1.384">
+<system-out><![CDATA[
+Given the user on product details page......................................passed
+When the product title is displayed.........................................passed
+And the product description should be displayed.............................passed
+And the product price should be displayed...................................passed
+And the product image should be displayed...................................passed
+And the product availability should be displayed............................passed
+And user click on Add to Wishlist button....................................passed
+And user goes to wishlist page..............................................passed
+Then the user verifies that the product is present in the wishlist..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Testing the entire flow from adding items to the cart to completing a purchase." name="Manage Shopping Cart (Update &amp; Remove)" time="6.905">
+<system-out><![CDATA[
+Given the user goes to the shopping cart page...............................passed
+When the user updates the quantity of "Smartphone" to "3"...................passed
+And the user removes the "Health Book" from the cart........................passed
+And the user clicks the "Update shopping cart" button.......................passed
+Then the cart should reflect the updated items and quantities...............passed
+And user enables the termscheckbox..........................................passed
+And the user selects the checkout button....................................passed
+Then the user should be redirected to checkout page.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Testing the entire flow from adding items to the cart to completing a purchase." name="Completing an order with valid billing, shipping, and payment details" time="7.725">
+<system-out><![CDATA[
+Given User is on the Checkout page..........................................passed
+When User enters billing details............................................passed
+And User selects the shipping method........................................passed
+And User chooses the payment method and enters details......................passed
+And User confirms the order.................................................passed
+Then User should see the order confirmation message.........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

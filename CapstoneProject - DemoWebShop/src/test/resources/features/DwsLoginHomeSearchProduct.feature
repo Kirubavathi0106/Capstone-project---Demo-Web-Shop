@@ -17,11 +17,10 @@ Scenario Outline: Successful Registration
    And user clicks on the logout button
    Then User will be redirected to Home page
 
-
 Examples:
-    | first_name | last_name | email                        | password  | confirm_password | gender |
-    | Kiruba     | Vathi     | Kirubavathi43336@gmail.com   | Kiruba@22 | Kiruba@22        | Female |
-    | Sanjiv     | Sai       | sanjivsaravanan23@gmail.com  | Sanjiv@1234 | Sanjiv@1234     | Male   |
+    | first_name | last_name       | email                        | password    | confirm_password | gender |
+    | Kiruba     | Vathi           | Kirubavathi42140@gmail.com   | Kiruba@22   | Kiruba@22        | Female |
+    | Sanjiv     | Saravanan       | sanjivsaravanan46@gmail.com  | Sanjiv@1234 | Sanjiv@1234      | Male   |
   
 
   @ValidLogin
@@ -49,7 +48,7 @@ Examples:
     When the user enters "Smartphone" in the search box
     And clicks the search button
     Then the search results for "Smartphone" should be displayed
-
+    
   @SearchFunctionality
   Scenario Outline: Search and apply filters for different products
     Given the user is on the homepage
@@ -67,7 +66,7 @@ Examples:
   Examples:
     | Product Name | Category                     | Min Price | Max Price |
     | Health Book  | Books                        | 5         | 10        |
-    | Smartphone   | Electronics >> Cell phones   | 100         | 500       |
+    | Smartphone   | Electronics >> Cell phones   | 100       | 500       |
 
 
   @TestingProductDetails

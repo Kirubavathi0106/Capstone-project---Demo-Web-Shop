@@ -5,9 +5,9 @@ package com.demowebshop.runner;
 
 	@CucumberOptions(
 	        features = {
-	            "src/test/resources/features/DwsHomeSearchProduct.feature",
-	            "src/test/resources/features/DwsOrderPlacement.feature",
-	            "src/test/resources/features/DwsTestingInValidScenario.feature"
+	        	"src/test/resources/features/DwsInvalidLoginRegister.feature",
+	            "src/test/resources/features/DwsLoginHomeSearchProduct.feature",
+	            "src/test/resources/features/DwsShoppingcartOrderPlacement.feature",   
 	        },
 	        glue = {
 	            "com.demowebshop.stepdefinition", 

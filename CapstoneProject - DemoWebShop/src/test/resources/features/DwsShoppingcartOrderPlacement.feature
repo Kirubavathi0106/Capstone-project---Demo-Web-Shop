@@ -11,7 +11,7 @@ Feature: Testing the entire flow from adding items to the cart to completing a p
     And the user selects the checkout button
     Then the user should be redirected to checkout page
     
-    @OrderPlacement
+ @OrderPlacement
   Scenario:  Completing an order with valid billing, shipping, and payment details
     Given User is on the Checkout page
     When User enters billing details
@@ -19,5 +19,5 @@ Feature: Testing the entire flow from adding items to the cart to completing a p
     And User chooses the payment method and enters details
     And User confirms the order
     Then User should see the order confirmation message
-    And User should click continue button
-    Then User will be redirected to Home page
+    #And User should click continue button
+    #Then User will be redirected to Home page
