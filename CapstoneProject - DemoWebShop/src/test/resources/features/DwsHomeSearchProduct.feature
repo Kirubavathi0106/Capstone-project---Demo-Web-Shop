@@ -20,8 +20,8 @@ Scenario Outline: Successful Registration
 
 Examples:
     | first_name | last_name | email                        | password  | confirm_password | gender |
-    | Kiruba     | Vathi     | Kirubavathi46536@gmail.com   | Kiruba@22 | Kiruba@22        | Female |
-    | Sanjiv     | Sai       | sanjivsaravanan18@gmail.com  | Sanjiv@1234 | Sanjiv@1234     | Male   |
+    | Kiruba     | Vathi     | Kirubavathi43336@gmail.com   | Kiruba@22 | Kiruba@22        | Female |
+    | Sanjiv     | Sai       | sanjivsaravanan23@gmail.com  | Sanjiv@1234 | Sanjiv@1234     | Male   |
   
 
   @ValidLogin
