@@ -42,7 +42,7 @@ public class Hooks {
 	@AfterAll()
 	public static void afterAll() {
 		if (driver != null) {
-            //driver.quit();  // Quit browser after all scenarios are executed
+            driver.quit();  // Quit browser after all scenarios are executed
             System.out.println("Browser closed after all scenarios.");
 		}
 		extent.flush();
