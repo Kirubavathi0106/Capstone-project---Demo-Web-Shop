@@ -9,6 +9,7 @@ Feature: Testing the entire flow from adding items to the cart to completing a p
     Then the cart should reflect the updated items and quantities
     And user enables the termscheckbox
     And the user selects the checkout button
+    Then the user should be redirected to checkout page
     
     @OrderPlacement
   Scenario:  Completing an order with valid billing, shipping, and payment details
@@ -19,3 +20,4 @@ Feature: Testing the entire flow from adding items to the cart to completing a p
     And User confirms the order
     Then User should see the order confirmation message
     And User should click continue button
+    Then User will be redirected to Home page

@@ -68,5 +68,11 @@ public class OrderPlacementSteps {
 		boolean actResult = checkoutPage.isLogoutButtonDisplayed();
 		Assert.assertTrue(actResult, "Logout button is not displayed!");
 	}
+	
+	@Then("User will be redirected to Home page")
+	public void UserwillberedirectedtoHomepage() {
+		String currentUrl = driver.getCurrentUrl();
+		Assert.assertTrue(currentUrl.contains("demowebshop"), "Not on home page" + currentUrl);
+	}
 
 }

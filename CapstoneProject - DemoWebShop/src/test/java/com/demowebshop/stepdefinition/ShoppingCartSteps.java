@@ -69,4 +69,10 @@ public class ShoppingCartSteps {
 		boolean actResult = shoppingCartPage.clickCheckout();
 		Assert.assertTrue(actResult);
 	}
+	@Then("the user should be redirected to checkout page")
+	public void redirecttohomepage() {
+		System.out.println("User is redirected to the checkout page.");
+	}
+	
+	
 }

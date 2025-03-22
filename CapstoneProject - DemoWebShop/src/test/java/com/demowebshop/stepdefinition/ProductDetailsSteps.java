@@ -79,7 +79,7 @@ public class ProductDetailsSteps extends Base {
 		
 	}
 	
-	@And("user verifies that the product is successfully added to the cart")
+	@Then("user verifies that the product is successfully added to the cart")
 	public void userverifiesproductaddedtocart() {
 		boolean actResult = productDetailsPage.VerifyAddtoCart();
 		Assert.assertTrue(actResult);

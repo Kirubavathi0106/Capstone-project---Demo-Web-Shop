@@ -14,13 +14,14 @@ Scenario Outline: Successful Registration
    And user enters confirm password "<confirm_password>"
    And user clicks on the register button
    Then user should see a success message 
-   And user clicks on the logout button  
+   And user clicks on the logout button
+   Then User will be redirected to Home page
 
 
 Examples:
     | first_name | last_name | email                        | password  | confirm_password | gender |
-    | Kiruba     | Vathi     | Kirubavathi67454@gmail.com   | Kiruba@22 | Kiruba@22        | Female |
-    #| Sanjiv     | Sai      | sanjiv@gmail.com             | Sanjiv@123 | sanjiv@1234     | Male   |
+    | Kiruba     | Vathi     | Kirubavathi46536@gmail.com   | Kiruba@22 | Kiruba@22        | Female |
+    | Sanjiv     | Sai       | sanjivsaravanan18@gmail.com  | Sanjiv@1234 | Sanjiv@1234     | Male   |
   
 
   @ValidLogin
@@ -60,7 +61,7 @@ Examples:
     And the user clicks on the search button
     Then the search results for "<Product Name>" should be displayed within the filters and clicked
     And user clicks on Add to Cart button 
-    And user verifies that the product is successfully added to the cart 
+    Then user verifies that the product is successfully added to the cart 
     
 
   Examples:
